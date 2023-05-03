@@ -19,6 +19,6 @@ You can change input csv file on 167 line in it and output file name in 169 line
 
 5.sending_first_message.py checks accepted requests and send message to those tagerts which have accepted our connection requests.
 
-Data folder contains all data  file made by different files while automation and scrapping.
+data_files folder contains all data  file made by different files while automation and scrapping.
 
 ### Dont forget to place username and password in repectively fields of parameter.py file
