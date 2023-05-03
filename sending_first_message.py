@@ -3,7 +3,7 @@ import pandas as pd
 from selenium import webdriver
 import time
 from selenium.webdriver.common.by import By
-import login_parameters
+import parameters
 from webdriver_manager.chrome import ChromeDriverManager
 driver = webdriver.Chrome(ChromeDriverManager().install())
 users_list = []
@@ -90,8 +90,8 @@ def checking_connections(driver,links_list,names_list,username,password):
 
 
 if __name__ == "__main__":
-    username=login_parameters.username
-    password=login_parameters.password
+    username=parameters.username
+    password=parameters.password
     df = pd.read_csv(r'data_files\profiles_data\profiles1.csv')
     # print(df.columns)
     links_list = df['links'].values.tolist()
