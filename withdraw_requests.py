@@ -4,9 +4,9 @@ import time
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
-from parameters import withdraw
+import parameters
 from webdriver_manager.chrome import ChromeDriverManager
-# driver = webdriver.Chrome(r"C:\Users\vikra\Downloads\chromedr\chromedriver.exe")
+
 driver = webdriver.Chrome(ChromeDriverManager().install())
 users_list = []
 
@@ -75,6 +75,6 @@ def withdraw_request(driver,username,password):
 
 
 if __name__ == "__main__":
-    username=withdraw.username
-    password=withdraw.password
+    username=parameters.username
+    password=parameters.password
     withdraw_request(driver,username,password)
