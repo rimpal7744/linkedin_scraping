@@ -5,11 +5,11 @@ import time
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
-import login_parameters
+import parameters
 import random
 from datetime import datetime
 from webdriver_manager.chrome import ChromeDriverManager
-# driver = webdriver.Chrome(r"C:\Users\vikra\Downloads\chromedr\chromedriver.exe")
+
 driver = webdriver.Chrome(ChromeDriverManager().install())
 users_list = []
 
@@ -95,8 +95,8 @@ def sending_requests(driver,users_data,username,password):
             pass
 
 if __name__ == "__main__":
-    username=login_parameters.username
-    password=login_parameters.password
+    username=parameters.username
+    password=parameters.password
     df = pd.read_csv(r'data_files\profiles_data\profiles1.csv')
     # print(df.columns)
     data_list = df[['links', 'Name']].values.tolist()
