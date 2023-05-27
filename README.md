@@ -19,6 +19,10 @@ You can change input csv file on 167 line in it and output file name in 169 line
 
 5.sending_first_message.py checks accepted requests and send message to those tagerts which have accepted our connection requests.
 
+6.sending_email.py it sends emails to list of users combined and separately from a excel list.there are two methods in it one for sending message separatly to multiple users and one is to send combine to list.
+
+7.reading_emails.py is automation of reading emails from a users inbox.
+
 data_files folder contains all data  file made by different files while automation and scrapping.
 
 ### Dont forget to place username and password in repectively fields of parameter.py file
